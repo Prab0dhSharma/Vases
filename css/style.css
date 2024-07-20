@@ -1,169 +1,373 @@
-/*
+/* 
     Author: Prabodh Sharma
-    Student ID: c0935879
-    Date: June 22, 2024
+    Date: July 20, 2024
     File Name: style.css
 */
 
 /* CSS Reset */
-* {
+body, header, nav, main, footer, img, h1, section, aside, figure, figcaption {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: "Mulish", sans-serif;;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.banner {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('../img/banner.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.navbar {
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
+/* Style rule for images */
+img {
+    max-width: fit-content;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.logo {
-    width: 16vw;
-    cursor: pointer;
+/* Style rule for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
 }
 
-.navbar ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
+
+/* Hide tab-desk class */
+.tab-desk {
+    display: none;
 }
 
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
-
-.navbar ul li::after {
-    content: '';
-    height: 3px;
-    border-radius: 4px;
-    width: 0;
-    background: brown;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-}
-
-.navbar ul li:hover::after {
-    width: 100%;
-}
-
-.content {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+/* Style rules for header content */
+header {
     text-align: center;
-    color: white;
+    font-size: 1.5em;
+    color: #32200e;
 }
 
-.content h1 {
-    font-size: 64px;
-    margin-top: 50px;
+header h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-style: italic; */
 }
 
-.content p {
-    margin: 20px auto;
-    font-weight: 400;
-    line-height: 24px;
+/* Style rules for navigation area */
+nav {
+    background-color: #32200e;
 }
 
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav li {
+    display: block;
+    font-size: 2em;
+    border-top: 1px solid #e5e9fc;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/* Style rule for button */
 button {
     width: 150px;
     padding: 16px 0;
     text-align: center;
-    margin: 10px;
+    /* margin: 10px; */
     border-radius: 8px;
-    font-weight: bold;
-    border: 2px solid brown;
+    font-weight: 600;
+    font-size: 0.85em;
+    border: 2px solid #32200e;
     background: transparent;
-    color: white;
+    color: #32200e;
     cursor: pointer;
     position: relative;
     overflow: hidden;
-}
-
-span {
-    background: brown;
-    height: 100%;
-    width: 0;
-    border-radius: none;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
-}
-
-button:hover span {
-    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 50px;
+    margin-right: 16px;
 }
 
 /* Style rules for main content */
 main {
     padding: 2%;
-    background-color: #f1f1f1;
+    background-color: #e5e9fc;
     overflow: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.collection-col {
-    padding: 12px;
-    margin-bottom: 32px;
-    float: left;
+main p {
+    font-size: 1.25em;
+}
+
+.action {
+    font-size: 1.25em;
+    color: #32200e;
+    font-weight: bold;
+}
+
+#ceramic, #glass, #wooden {
+    margin: 0 2%;
+}
+
+#info {
+    clear: left;
+    background-color: #c0caf7;
+    padding: 1% 2%;
+}
+
+#info ul {
+    margin-left: 10%;
+}
+
+.round {
+    border-radius: 8px;
+}
+
+#contact {
     text-align: center;
 }
 
-.info {
-    margin-top: 64px;
+.tel-link {
+    background-color: #32200e;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
     text-align: center;
-    line-height: 6vh;
-    margin-bottom: 24px;
+    border-radius: 5px;
 }
 
-.contact {
-    margin-top: 64px;
-    text-align: center;
-    margin-bottom: 32px;
-    line-height: 24px;
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
 }
 
-.map {
-    margin-top: 24px;
-}
-
-.contact a {
+#contact .email-link {
     color: #4645a8;
     text-decoration: none;
     font-weight: bold;
 }
 
+.map {
+    border: 5px solid #32200e;
+    width: 95%;
+    height: 50%;
+}
+
+/* Style rule for the container */
+#container {
+	width: 100%;
+	margin: 0 auto;
+	flex-grow: 1; 			/* Allows content to grow to fill available space */
+}
+
+/* Style rule for the table element */
+table {
+	width: 80%;
+	margin: 0 auto;
+	border: 3px solid #71881b;
+}
+
+#heading {
+	background-color: black;
+	color: white;
+	border: none;
+}
+
+/* Style rule for table, tr, th, and td selectors */
+table, tr, th, td {
+	border-collapse: collapse;
+	padding: 2%;
+}
+
+/* Style rule for the caption element */
+caption {
+	font-size: 2em;
+	padding: 2%;
+	margin-top: 2%;
+}
+
+/* Style rule for th and td selectors */
+th, td {
+	border: solid black;
+}
+
+/* Style rule for td */
+td {
+	text-align: center;
+}
+
+/* Style rule for tr selector */
+tr:nth-child(odd) {
+	background-color: #ccc;
+}
+
 /* Style rules for footer content */
 footer {
-    text-align: center;
-    font-size: 0.85em;
+    clear: left;
+    font-size: .75em;
+	text-align: center;
     background-color: black;
     color: #dedede;
-    padding: 4% 4%;
-    line-height: 24px;
+	padding: 50px;
 }
 
 footer a {
-    color: #dedede;
+    color: #8886ec;
     text-decoration: none;
+}
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 550px), print {
+
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+
+    /* Tablet Viewport: Style rule for header content */
+    span.tab-desk {
+        display: inline;
+    }
+
+
+    /* Tablet Viewport: Style rule for the aside  */
+    aside {
+        grid-column: 1 / span 2;
+    }
+
+
+    /* Tablet Viewport: Style rules for the grid to a two column layout */
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+
+    /* Tablet Viewport: Style rules for nav area. */
+    nav li {
+        display: inline-block;
+        font-size: 1.5em;
+        border-right: 1px solid #e5e9fc;
+    }
+
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.25em 0.5em;
+    }
+
+
+    /* Tablet Viewport: Style rule for map. */
+    .map {
+        width: 500px;
+        height: 450px;
+    }
+}
+
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px), print {
+
+    /* Desktop Viewport: Style rule for header. */
+    header {
+        padding: 2%;
+    }
+
+
+    /* Desktop Viewport: Style rule for the aside  */
+    aside {
+        grid-column: 1 / span 4;
+    }
+
+
+    /* Desktop Viewport: Style rules for the grid to a four column layout */
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    /* Desktop Viewport: Style rules for nav area.  */
+    nav li a {
+        padding: 0.5em 1.5em;
+    }
+
+    nav li a:hover {
+        color: #32200e;
+        background-color: #e5e9fc;
+    }
+
+
+    /* Desktop Viewport: Style rule for figcaption */
+    figcaption {  
+        font-size: 1em;
+    }
+
+    /* Desktop Viewport: Style rules for main content */
+    #info ul {
+        margin-left: 5%;
+    }
+
+    main h3 {
+        font-size: 1.5em;
+    }
+
+    #piano, #guitar, #violin {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+}
+
+
+/* Media Query for Mobile Viewport */
+@media screen and (min-width: 320px), print {
+
+    /* Mobile Viewport: Style rule for aside area */
+    aside {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #32200e;
+        /* text-shadow: 3px 3px 10px #8280cb; */
+    }
+
+    figure {
+        position: relative;
+        max-width: 275px;
+        margin: 2% auto;
+        border: 2px solid #32200e;
+    }
+
+    figcaption {
+        position: absolute;
+        bottom: 0;
+        background: rgba(75, 52, 30, 0.7);
+        color: #fff;
+        width: 100%;
+        padding: 5% 0;
+        text-align: center;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #fff;
+    }
 }
