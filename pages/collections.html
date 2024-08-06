@@ -1,7 +1,7 @@
 <!-- 
     Author: Prabodh Sharma
-    Date: July 20, 2024
-    File Name: Collections
+    Date: August 03, 2024
+    File Name: Nutrition
 -->
 
 <!DOCTYPE html>
@@ -14,65 +14,100 @@
     <title>Collections</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon.png">
-    <link rel="icon" sizes="192x192" href="../img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png" />
+    <link rel="icon" sizes="192x192" href="../img/android-chrome-192.png" />
 </head>
 
 <body>
-    <header>
-        <h1><span class="tab-desk">❋</span>Pangeni Vases<span class="tab-desk">❋</span></h1>
-    </header>
+    <div id="container">
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/about.html">About</a></li>
-            <li><a href="../pages/team.html">Team</a></li>
-            <li><a href="../pages/collections.html">Collections</a></li>
-            <li><a href="../pages/training.html">Training</a></li>
-            <li><a href="../pages/media.html">Media</a></li>
-            <li><a href="../pages/FAQs.html">FAQs</a></li>
-            <li><a href="../pages/contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="../index.html">Home</a>
+                <a href="../pages/about.html">About Us</a>
+                <a href="../pages/training.html">Training</a>
+                <a href="../pages/collections.html">Collections</a>
+                <a href="../pages/contact.html">Contact Us</a>
+            </div>
 
-    <main>
-        <section id="ceramic">
-            <h3>Elegant Ceramic Vase</h3>
-            <img src="../img/image 1.png" alt="ceramic vase" class="round">
-            <p>Crafted from the earth itself, elegant ceramic vases offer a timeless touch of sophistication to any
-                space. Their smooth, glazed surfaces reflect light with a subtle sheen, while their shapes range from
-                the classically simple to the playfully modern. Each piece is a testament to the potter's artistry,
-                where every curve and line speaks volumes about skill and tradition.</p>
-        </section>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
 
-        <section id="glass">
-            <h3>Modern Glass Vase</h3>
-            <img src="../img/image 2.png" alt="glass vases" class="round">
-            <p>Modern glass vases embody a minimalist aesthetic, their transparency allowing light to play a starring
-                role. The smooth, reflective surfaces showcase the beauty of their contents, whether it's a single,
-                perfectly placed orchid or a cluster of colorful pebbles. The clean lines and simple forms of glass
-                vases create a sense of airiness and weightlessness, perfectly complementing contemporary decor.</p>
-        </section>
+        <!-- Use the header area for the website name or logo -->
+        <header id="pv-logo">
+            <a href="../index.html"><img src="../img/logo.png" alt="Pangeni Vases"></a>
+        </header>
 
-        <section id="wooden">
-            <h3>Wooden Vases</h3>
-            <img src="../img/image 3.png" alt="wood vase" class="round">
-            <p>Wooden vases bring a touch of rustic charm and natural elegance to any space.
-                The rich textures of the wood, from smooth and polished to rough and organic, add a sense of warmth and
-                craftsmanship. Each piece is unique, showcasing the natural variations in the grain and color of the
-                wood.</p>
-        </section>
-    </main>
 
-    <footer>
-        <p>© Copyright 2024. Pangeni Vases. All Rights Reserved.</p>
-        <P>Email: <a href="mailto:info@pangenivases.com">info@pangenivases.com</a></P>
-        <p>Prabodh Sharma - c0935879</p>
-    </footer>
+        <!-- Use the nav area to add hyperlinks to other pages within the website -->
+        <nav class="tablet-desktop">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/about.html">About Us</a></li>
+                <li><a href="../pages/training.html">Training</a></li>
+                <li><a href="../pages/collections.html">Collections</a></li>
+                <li><a href="../pages/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Our Collections Hero Image -->
+        <div id="hero" class="tablet-desktop">
+            <img src="../img/our-collections-hero-image.jpg" alt="Our collection of vases">
+        </div>
+
+        <main>
+            <div class="grid">
+
+                <figure class="frame">
+                    <img src="../img/ceramic.png" alt="Elegant Ceramic Vase"></a>
+                    <figcaption class="pic-text">Ceramic Vases</figcaption>
+                </figure>
+
+                <figure class="frame">
+                    <img src="../img/glass.png" alt="Modern Glass Vase"></a>
+                    <figcaption class="pic-text">Glass Vases</figcaption>
+                </figure>
+
+                <figure class="frame">
+                    <img src="../img/wooden.png" alt="Wooden Vase"></a>
+                    <figcaption class="pic-text">Wooden Vases</figcaption>
+                </figure>
+
+                <figure class="frame">
+                    <img src="../img/copper.png" alt="Copper Vase"></a>
+                    <figcaption class="pic-text">Copper Vases</figcaption>
+                </figure>
+
+                <figure class="frame">
+                    <img src="../img/metal.png" alt="Metal Vase"></a>
+                    <figcaption class="pic-text">Metal Vases</figcaption>
+                </figure>
+
+                <figure class="frame">
+                    <img src="../img/marble.png" alt="Marble Vase"></a>
+                    <figcaption class="pic-text">Marble Vases</figcaption>
+                </figure>
+
+            </div>
+        </main>
+
+        <!-- Use the footer area to add webpage footer content -->
+        <footer>
+            <p>© Copyright 2024. Pangeni Vases. All Rights Reserved.</p>
+            <P>Email: <a href="mailto:info@pangenivases.com">info@pangenivases.com</a></P>
+            <p>Prabodh Sharma - c0935879</p>
+        </footer>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+
 </body>
-
 </html>

@@ -1,67 +1,106 @@
 <!-- 
     Author: Prabodh Sharma
-    Date: July 20, 2024
-    File Name: About
+    Date: August 03, 2024
+    File Name: About Us
 -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>About us</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>About Us</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon.png">
-    <link rel="icon" sizes="192x192" href="../img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png" />
+    <link rel="icon" sizes="192x192" href="../img/android-chrome-192.png" />
 </head>
 
 <body>
-    <header>
-        <h1><span class="tab-desk">❋</span>Pangeni Vases<span class="tab-desk">❋</span></h1>
-    </header>
+    <div id="container">
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/about.html">About</a></li>
-            <li><a href="../pages/team.html">Team</a></li>
-            <li><a href="../pages/collections.html">Collections</a></li>
-            <li><a href="../pages/training.html">Training</a></li>
-            <li><a href="../pages/media.html">Media</a></li>
-            <li><a href="../pages/FAQs.html">FAQs</a></li>
-            <li><a href="../pages/contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="../index.html">Home</a>
+                <a href="../pages/about.html">About Us</a>
+                <a href="../pages/training.html">Training</a>
+                <a href="../pages/collections.html">Collections</a>
+                <a href="../pages/contact.html">Contact Us</a>
+            </div>
 
-    <main>
-        <section class="about-us">
-          <h2>About Pangeni Vases</h2>
-          <p>Pangeni Vases was founded in 2054 B.S with a passion for bringing the beauty and artistry of vases to homes around the world. We believe that vases are more than just functional objects; they are conversation starters, storytellers, and pieces of art that elevate any space.</p>
-          <p>We source our vases from skilled artisans and renowned designers, ensuring each piece is crafted with the highest quality materials and meticulous attention to detail. From the timeless elegance of ceramic to the modern simplicity of glass and the warmth of wood, we offer a diverse collection to cater to every taste and style.</p>
-    
-          <h3>A Legacy in Every Form</h3>
-          <p>Vases are more than just decorative objects; they are silent storytellers. From the delicate porcelain creations of China's Ming Dynasty to the bold, contemporary sculptures pushing boundaries today, each vase embodies a specific artistic vision and cultural influence. Owning a piece of this legacy brings a touch of history and artistry into your home, sparking conversation and admiration.</p>
-    
-          <h3>A Canvas for Creativity</h3>
-          <p>The beauty of vases lies not just in their form, but also in their versatility. They serve as a blank canvas for your own creative expression. Fill them with vibrant flowers that echo their hues or complementing tones, or opt for sculptural branches or pampas grass for a modern, minimalist look. Vases allow you to personalize your space, reflecting your unique style and taste.</p>
-    
-          <h3>An Investment in Timeless Beauty</h3>
-          <p>Investing in a well-crafted vase is an investment in timeless elegance. Unlike fleeting trends, iconic vase designs transcend time. Owning a piece with a rich history or a renowned designer's touch ensures it will remain a cherished part of your home for years to come, potentially becoming a treasured heirloom passed down through generations.</p>
-    
-        </section>
-      </main>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
 
-    <footer>
-        <p>© Copyright 2024. Pangeni Vases. All Rights Reserved.</p>
-        <P>Email: <a href="mailto:info@pangenivases.com">info@pangenivases.com</a></P>
-        <p>Prabodh Sharma - c0935879</p>
-    </footer>
+        <!-- Use the header area for the website name or logo -->
+        <header id="pv-logo">
+            <a href="../index.html"><img src="../img/logo.png" alt="Pangeni Vases"></a>
+        </header>
+
+
+        <!-- Use the nav area to add hyperlinks to other pages within the website -->
+        <nav class="tablet-desktop">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/about.html">About Us</a></li>
+                <li><a href="../pages/training.html">Training</a></li>
+                <li><a href="../pages/collections.html">Collections</a></li>
+                <li><a href="../pages/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- Use the main area to add the main content of the webpage -->
+        <main>
+
+            <video controls poster="../img/hero-image.jpg">
+                <source src="../media/pv_video.mp4" type="video/mp4">
+                <source src="../media/ffc_video.webm" type="video/webm">
+
+                <track src="../media/captions.vtt" kind="captions" srclang="en" label="Captions">
+                <track src="../media/descriptions.vtt" kind="descriptions" srclang="en" label="English Descriptions">
+                <p>Your browser does not support the video element.</p>
+            </video>
+
+
+            <section class="about-us">
+                <h2>About Pangeni Vases</h2>
+                <p>Pangeni Vases was founded in 2054 B.S with a passion for bringing the beauty and artistry of vases to homes around the world. We believe that vases are more than just functional objects; they are conversation starters, storytellers, and pieces of art that elevate any space.</p>
+                <p>We source our vases from skilled artisans and renowned designers, ensuring each piece is crafted with the highest quality materials and meticulous attention to detail. From the timeless elegance of ceramic to the modern simplicity of glass and the warmth of wood, we offer a diverse collection to cater to every taste and style.</p>
+          
+                <h3>A Legacy in Every Form</h3>
+                <p>Vases are more than just decorative objects; they are silent storytellers. From the delicate porcelain creations of China's Ming Dynasty to the bold, contemporary sculptures pushing boundaries today, each vase embodies a specific artistic vision and cultural influence. Owning a piece of this legacy brings a touch of history and artistry into your home, sparking conversation and admiration.</p>
+          
+                <h3>A Canvas for Creativity</h3>
+                <p>The beauty of vases lies not just in their form, but also in their versatility. They serve as a blank canvas for your own creative expression. Fill them with vibrant flowers that echo their hues or complementing tones, or opt for sculptural branches or pampas grass for a modern, minimalist look. Vases allow you to personalize your space, reflecting your unique style and taste.</p>
+          
+                <h3>An Investment in Timeless Beauty</h3>
+                <p>Investing in a well-crafted vase is an investment in timeless elegance. Unlike fleeting trends, iconic vase designs transcend time. Owning a piece with a rich history or a renowned designer's touch ensures it will remain a cherished part of your home for years to come, potentially becoming a treasured heirloom passed down through generations.</p>
+          
+              </section>
+
+        </main>
+
+
+        <!-- Use the footer area to add webpage footer content -->
+        <footer>
+            <p>© Copyright 2024. Pangeni Vases. All Rights Reserved.</p>
+            <P>Email: <a href="mailto:info@pangenivases.com">info@pangenivases.com</a></P>
+            <p>Prabodh Sharma - c0935879</p>
+        </footer>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+
 </body>
 
 </html>

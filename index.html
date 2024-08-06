@@ -1,67 +1,135 @@
 <!-- 
     Author: Prabodh Sharma
-    Date: July 20, 2024
-    File Name: Home Page
+    Date: August 03, 2024
+    File Name: Homepage
 -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Pangeni Vases: Home Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pangeni Vases</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png">
-    <link rel="icon" sizes="192x192" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="./img/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png" />
+    <link rel="icon" sizes="192x192" href="./img/android-chrome-192.png" />
 </head>
 
 <body>
-    <header>
-        <h1><span class="tab-desk">❋</span>Pangeni Vases<span class="tab-desk">❋</span></h1>
-    </header>
+    <div id="container">
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/about.html">About</a></li>
-            <li><a href="pages/team.html">Team</a></li>
-            <li><a href="pages/collections.html">Collections</a></li>
-            <li><a href="pages/training.html">Training</a></li>
-            <li><a href="pages/media.html">Media</a></li>
-            <li><a href="pages/FAQs.html">FAQs</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="pages/about.html">About Us</a>
+                <a href="pages/training.html">Training</a>
+                <a href="pages/collections.html">Collections</a>
+                <a href="pages/contact.html">Contact Us</a>
+            </div>
 
-    <!-- Hero Image -->
-    <div id="hero" class="tab-desk">
-        <!-- <img src="img/banner.jpg" alt="banner"> -->
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+
+        <!-- Use the header area for the website name or logo -->
+        <header id="pv-logo">
+            <a href="index.html"><img src="img/logo.png" alt="Pangeni Vases"></a>
+        </header>
+
+
+        <!-- Tablet, Desktop Nav -->
+        <nav class="tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/about.html">About Us</a></li>
+                <li><a href="pages/training.html">Training</a></li>
+                <li><a href="pages/collections.html">Collections</a></li>
+                <li><a href="pages/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Image -->
+        <div id="hero" class="tablet-desktop">
+            <img src="img/hero-image.jpg" alt="left arm extended holding a weight">
+        </div>
+
+
+        <!-- Use the main area to add the main content of the webpage -->
+        <main>
+            <div class="mobile">
+                <p>
+                    Welcome to Pangeni Vases. Our mission is to elevate your living spaces with exquisite craftsmanship
+                    and timeless designs.
+                </p>
+
+                <p>
+                    If you've been searching for the perfect vase to complement your home decor, look no further.
+                    Pangeni offers a curated collection of vases that blend artistry and functionality. From classic
+                    elegance to modern minimalism, we have a vase to suit every design.
+                </p>
+                <p>Experience the Pangeni difference with our exclusive home trial. Enjoy the beauty of our vases in
+                    your own space for a week. If you fall in love, you can keep your chosen vase and start building
+                    your collection. <span class="action">Discover the magic today!</span>
+                </p>
+            </div>
+
+
+            <div class="tablet-desktop">
+                <p>
+                    Welcome to Pangeni Vases. Our mission is to elevate your living spaces with exquisite craftsmanship
+                    and timeless designs.
+                </p>
+                <p>
+                    If you've been searching for the perfect vase to complement your home decor, look no further.
+                    Pangeni offers a curated collection of vases that blend artistry and functionality. From classic
+                    elegance to modern minimalism, we have a vase to suit every design.
+                </p>
+                <p>Experience the Pangeni difference with our exclusive home trial. Enjoy the beauty of our vases in
+                    your own space for a week. If you fall in love, you can keep your chosen vase and start building
+                    your collection. <span class="action">Discover the magic today!</span>
+                </p>
+            </div>
+
+            <div class="grid">
+
+                <figure class="frame">
+                    <img src="img/ceramic.png" alt="Elegant Ceramic Vase"></a>
+                    <figcaption class="pic-text">Ceramic Vases</figcaption>
+                </figure>
+
+                <figure class="frame">
+                    <img src="img/glass.png" alt="Modern Glass Vase"></a>
+                    <figcaption class="pic-text">Glass Vases</figcaption>
+                </figure>
+
+                <figure class="frame">
+                    <img src="img/wooden.png" alt="Wooden Vase"></a>
+                    <figcaption class="pic-text">Wooden Vases</figcaption>
+                </figure>
+            </div>
+        </main>
+
+
+        <!-- Use the footer area to add webpage footer content -->
+        <footer>
+            <p>© Copyright 2024. Pangeni Vases. All Rights Reserved.</p>
+            <P>Email: <a href="mailto:info@pangenivases.com">info@pangenivases.com</a></P>
+            <p>Prabodh Sharma - c0935879</p>
+        </footer>
     </div>
 
-    <main>
-        <div id="intro">
-            <h1>World's Most Iconic Vases</h1>
-            <p>Explore the timeless beauty with our curated collection. Where every line and curve is a testament to human <span class="action">creativity.</span> Owning a piece of this legacy brings a touch of history and artistry into your home,
-                sparking conversation and admiration.</P>
-            
-            <div>
-                <button type="button"><span></span>Shop Now</button>
-                <button type="button"><span></span>Watch More</button>
-            </div>
-        </div>
-    </main>
+    <script src="scripts/script.js"></script>
 
-    <footer>
-        <p>© Copyright 2024. Pangeni Vases. All Rights Reserved.</p>
-        <P>Email: <a href="mailto:info@pangenivases.com">info@pangenivases.com</a></P>
-        <p>Prabodh Sharma - c0935879</p>
-    </footer>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 <!-- 
     Author: Prabodh Sharma
-    Date: July 20, 2024
+    Date: August 03, 2024
     File Name: Training
 -->
 
@@ -14,153 +14,152 @@
     <title>Training</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon.png">
-    <link rel="icon" sizes="192x192" href="../img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png" />
+    <link rel="icon" sizes="192x192" href="../img/android-chrome-192.png" />
 </head>
 
 <body>
-    <header>
-        <h1><span class="tab-desk">❋</span>Pangeni Vases<span class="tab-desk">❋</span></h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/about.html">About</a></li>
-            <li><a href="../pages/team.html">Team</a></li>
-            <li><a href="../pages/collections.html">Collections</a></li>
-            <li><a href="../pages/training.html">Training</a></li>
-            <li><a href="../pages/media.html">Media</a></li>
-            <li><a href="../pages/FAQs.html">FAQs</a></li>
-            <li><a href="../pages/contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
     <div id="container">
 
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="../index.html">Home</a>
+                <a href="../pages/about.html">About Us</a>
+                <a href="../pages/training.html">Training</a>
+                <a href="../pages/collections.html">Collections</a>
+                <a href="../pages/contact.html">Contact Us</a>
+            </div>
+
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+
+        <!-- Use the header area for the website name or logo -->
+        <header id="pv-logo">
+            <a href="../index.html"><img src="../img/logo.png" alt="Pangeni Vases"></a>
+        </header>
+
+
+        <!-- Use the nav area to add hyperlinks to other pages within the website -->
+        <nav class="tablet-desktop">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/about.html">About Us</a></li>
+                <li><a href="../pages/training.html">Training</a></li>
+                <li><a href="../pages/collections.html">Collections</a></li>
+                <li><a href="../pages/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
         <!-- Use the main area to add the main content of the webpage -->
-	   <main>
-           <table>
-            <caption>From Vision to Vase: A Production Timeline</caption>
+        <main>
+            <div class="mobile">
+                <h3>From Vision to Vase: A Production Timeline</h3>
+                <p>Classic Ceramic Vase: $39.99</p>
+                <p>Textured Glass Vase: $74.99</p>
+                <p>Modern Metal Planter: $59.99</p>
+                <p>Rustic Wooden Flower Box: $49.99</p>
+                <p>Elegant Porcelain Bowl: $89.99</p>
+                <p>Minimalist Concrete Planter: $34.99</p>
+            </div>
 
-            <table>
-                <tr id="heading">
-                  <th>Product</th>
-                  <th>Date</th>
-                  <th>Price</th>
-                  <th>Length</th>
-                  <th>Room</th>
-                  <th>Instructor</th>
-                </tr>
-                <tr>
-                  <td>Classic Ceramic Vase</td>
-                  <td>2024-08-15</td>
-                  <td>$39.99</td>
-                  <td>12 inches</td>
-                  <td>Living Room</td>
-                  <td>Emily Johnson</td>
-                </tr>
-                <tr>
-                  <td>Textured Glass Vase</td>
-                  <td>2024-08-22</td>
-                  <td>$74.99</td>
-                  <td>10 inches</td>
-                  <td>Bedroom</td>
-                  <td>Michael Chen</td>
-                </tr>
-                <tr>
-                  <td>Modern Metal Planter</td>
-                  <td>2024-09-05</td>
-                  <td>$59.99</td>
-                  <td>14 inches</td>
-                  <td>Patio</td>
-                  <td>Sarah Williams</td>
-                </tr>
-                <tr>
-                  <td>Rustic Wooden Flower Box</td>
-                  <td>2024-09-12</td>
-                  <td>$49.99</td>
-                  <td>18 inches</td>
-                  <td>Garden</td>
-                  <td>David Thompson</td>
-                </tr>
-                <tr>
-                  <td>Elegant Porcelain Bowl</td>
-                  <td>2024-09-19</td>
-                  <td>$89.99</td>
-                  <td>8 inches</td>
-                  <td>Dining Room</td>
-                  <td>Lisa Rodriguez</td>
-                </tr>
-                <tr>
-                  <td>Minimalist Concrete Planter</td>
-                  <td>2024-09-26</td>
-                  <td>$34.99</td>
-                  <td>6 inches</td>
-                  <td>Office</td>
-                  <td>Alex Patel</td>
-                </tr>
-                <tr>
-                  <td>Handwoven Basket Planter</td>
-                  <td>2024-10-03</td>
-                  <td>$44.99</td>
-                  <td>15 inches</td>
-                  <td>Sunroom</td>
-                  <td>Olivia Brown</td>
-                </tr>
-                <tr>
-                  <td>Vintage Copper Watering Can</td>
-                  <td>2024-10-10</td>
-                  <td>$69.99</td>
-                  <td>11 inches</td>
-                  <td>Greenhouse</td>
-                  <td>Robert Lee</td>
-                </tr>
-                <tr>
-                  <td>Hanging Glass Terrarium</td>
-                  <td>2024-10-17</td>
-                  <td>$54.99</td>
-                  <td>9 inches</td>
-                  <td>Balcony</td>
-                  <td>Emma Garcia</td>
-                </tr>
-                <tr>
-                  <td>Sculptural Ceramic Pot</td>
-                  <td>2024-10-24</td>
-                  <td>$79.99</td>
-                  <td>13 inches</td>
-                  <td>Entryway</td>
-                  <td>James Wilson</td>
-                </tr>
-                <tr>
-                  <td>Bamboo Plant Stand Set</td>
-                  <td>2024-10-31</td>
-                  <td>$99.99</td>
-                  <td>Various</td>
-                  <td>Conservatory</td>
-                  <td>Sophia Martinez</td>
-                </tr>
-                <tr>
-                  <td>Decorative Stone Fountain</td>
-                  <td>2024-11-07</td>
-                  <td>$129.99</td>
-                  <td>24 inches</td>
-                  <td>Courtyard</td>
-                  <td>Daniel Kim</td>
-                </tr>
-              </table>
-           </table>
+            <div class="tablet-desktop">
+                <table><!-- Start Table -->
+                    <caption>From Vision to Vase: A Production Timeline</caption>
+
+                    <tr id="heading"><!-- Row 1 -->
+                        <th>Product</th>
+                        <th>Date</th>
+                        <th>Price</th>
+                        <th>Length</th>
+                        <th>Room</th>
+                        <th>Instructor</th>
+                    </tr>
+
+                    <tr><!-- Row 2 -->
+                        <td>Classic Ceramic Vase</td>
+                        <td>2024-08-15</td>
+                        <td>$39.99</td>
+                        <td>12 inches</td>
+                        <td>Living Room</td>
+                        <td>Emily Johnson</td>
+                    </tr>
+
+                    <tr><!-- Row 3 -->
+                        <td>Textured Glass Vase</td>
+                        <td>2024-08-22</td>
+                        <td>$74.99</td>
+                        <td>10 inches</td>
+                        <td>Bedroom</td>
+                        <td>Michael Chen</td>
+                    </tr>
+
+                    <tr><!-- Row 4 -->
+                        <td>Modern Metal Planter</td>
+                        <td>2024-09-05</td>
+                        <td>$59.99</td>
+                        <td>14 inches</td>
+                        <td>Patio</td>
+                        <td>Sarah Williams</td>
+                    </tr>
+
+                    <tr><!-- Row 5 -->
+                        <td>Rustic Wooden Flower Box</td>
+                        <td>2024-09-12</td>
+                        <td>$49.99</td>
+                        <td>18 inches</td>
+                        <td>Garden</td>
+                        <td>David Thompson</td>
+                    </tr>
+
+                    <tr><!-- Row 6 -->
+                        <td>Elegant Porcelain Bowl</td>
+                        <td>2024-09-19</td>
+                        <td>$89.99</td>
+                        <td>8 inches</td>
+                        <td>Dining Room</td>
+                        <td>Lisa Rodriguez</td>
+                    </tr>
+
+                    <tr><!-- Row 7 -->
+                        <td>Minimalist Concrete Planter</td>
+                        <td>2024-09-26</td>
+                        <td>$34.99</td>
+                        <td>6 inches</td>
+                        <td>Office</td>
+                        <td>Alex Watson</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="music-sample">
+                <h3>Enjoy upbeat music that matches the elegance of our vases. Here’s a sample of the lively tunes that set the perfect mood for appreciating our collection.</h3>
+            
+                <audio controls="controls">
+                    <source src="../media/ffc_audio.mp3" type="audio/mp3">
+                    <source src="../media/ffc_audio.ogg" type="audio/ogg">
+                    <p>Your browser doesn't support the audio element</p>
+                </audio>
+            </div>
         </main>
-	</div>
 
-    <footer>
-        <p>© Copyright 2024. Pangeni Vases. All Rights Reserved.</p>
-        <P>Email: <a href="mailto:info@pangenivases.com">info@pangenivases.com</a></P>
-        <p>Prabodh Sharma - c0935879</p>
-    </footer>
+
+        <!-- Use the footer area to add webpage footer content -->
+        <footer>
+            <p>© Copyright 2024. Pangeni Vases. All Rights Reserved.</p>
+            <P>Email: <a href="mailto:info@pangenivases.com">info@pangenivases.com</a></P>
+            <p>Prabodh Sharma - c0935879</p>
+        </footer>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+
 </body>
-
 </html>
